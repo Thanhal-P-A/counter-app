@@ -35,12 +35,12 @@ export default class App extends React.Component {
           </Text>
         </View>
         <View style={styles.viewButton}>
-          <TouchableOpacity style={styles.inc} onPress={this.dec}>
+          <TouchableOpacity style={styles.button} onPress={this.dec}>
             <Text style={styles.textInc}>
               -
             </Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.dec} onPress={this.inc}>
+          <TouchableOpacity style={styles.button} onPress={this.inc}>
             <Text style={styles.textDec}>
               +
             </Text>
@@ -83,16 +83,7 @@ const styles = StyleSheet.create({
     fontSize:140,
     color:'#00bbb0'
   },
-  inc:{
-    alignItems:'center',
-    justifyContent:'space-around',
-    height:80,
-    width:80,
-    borderRadius:20,
-    borderWidth:2,
-    borderColor:'#00bbb0',
-  },
-  dec:{
+  button:{
     alignItems:'center',
     justifyContent:'space-around',
     height:80,
